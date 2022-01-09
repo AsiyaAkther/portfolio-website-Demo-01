@@ -5,121 +5,112 @@
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
   }
-  #welcome-section {
-    height: 100vh;
-    background-color: #c8a4c8;
+  #navbar{
+      width:100%;
+      min-height:5vh;
+      background-color: indigo;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top:0;
+      z-index:10;
+      padding:5px 15px;
   }
-  #navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1% 5%;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10;
-    background-color: #31033b;
-    align-items: center;
+  .fa-laptop-code{
+      color:#fff;
+      border:5px solid #fff;
+      font-size:40px;
+      padding:15px;
+      border-radius:50%;
   }
-  .fa-laptop-code {
-    color: #fff;
-    font-size: 30px;
-    border: 5px solid #fff;
-    padding: 15px;
-    border-radius: 50%;
+  #navbar ul li{
+      list-style-type: none;
+      float:left;
   }
-  #navbar ul li {
-    list-style-type: none;
-    float: left;
+  #navbar ul li a{
+      margin:0 5px;
+      padding:5px;
+      font-size:18px;
+      text-transform: uppercase;
+      color:#fff;
+      text-decoration:none;
+      transition:1s;
   }
-  #navbar ul li a {
-    margin: 0 5px;
-    padding: 0 5px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: 1s;
-    text-transform: uppercase;
+  #navbar ul li a:hover{
+      color:lightslategray;
+      transition:1s;
   }
-  #navbar ul li a:hover {
-    color: #a6a3a6;
-    transition: 1s;
+  #profile{
+      min-height:95vh;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: purple;
+      padding:2% 7%;
   }
-  #profile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10%;
-  }
-  #profile-text {
-  }
-  #profile-text h1 {
-    font-size: 2rem;
-    color: #424142;
-    margin-bottom: 10px;
-    font-family: "Luxurious Roman", cursive;
-  }
-  #profile-text p {
-    width: 90%;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-  }
-  #links {
-    margin-top: 20px;
-  }
-  #profile-text a {
-    margin: 0 10px 0px 0px;
-    background-color: #31033b;
-    padding: 10px;
-    border-radius: 50px;
-    color: #fff;
-    text-decoration: none;
-    transition: 1s;
-  }
-  #profile-text a:hover {
-    background-color: #3a243a;
-    transition: 1s;
-  }
-  #profile-img {
-    width: 350px;
-    height: 200px;
-  }
-  #profile-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-  #projects {
-    background: #5d2d5d;
-    height: 95vh;
-  }
-  #projects h2 {
-    text-align: center;
-    padding: 20px 0;
-    color: #fff;
-    font-size: 2rem;
-  }
-  .project-tile {
-    width: 31%;
-    float: left;
-    margin: 15px;
-    background: #958e95;
-  }
-  .project-tile img {
-    width: 100%;
-    height: 220px;
-  }
-  .project-tile a {
-    text-decoration: none;
-  }
-  .project-tile h3 {
-    text-align: center;
-    padding: 15px 0;
-    color: #fff;
-  }
-  #footer{
-    text-align:center;
-    font-size: 1.8rem;
+  #profile-text h1{
     color:#fff;
-    padding:15px 0;
-    background-color:#31033b;
+    font-size:3rem;
+    font-family: 'Luxurious Roman', cursive;
+    margin-bottom:15px;
   }
+  #profile-text p{
+      width:90%;
+      color:#fff;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+  }
+  #links{
+      margin-top:20px;
+  }
+  #links a{
+      margin:0 5px;
+      background:rgb(89, 6, 131);
+      color:#fff;
+      font-size:18px;
+      padding:10px;
+      text-decoration: none;
+      border-radius: 50px;
+  }
+  #profile #profile-img{
+      width:400px;
+      height:auto;
+  }
+  #profile-img img{
+      width:100%;
+      height:100%;
+      border-radius:50%;
+  }
+  #projects{
+      background-color: rgb(44, 4, 59);
+  }
+  #projects h2{
+      color:#fff;
+      padding:15px 0px;
+      text-align: center;
+      margin-bottom:20px;
+  }
+  #all-projects{
+    display: flex;
+      flex-wrap: wrap;
+      width:90%;
+      margin:0 auto;
+      justify-content: space-evenly;
+  }
+.project-tile{
+     width:33%;
+     margin-bottom:30px;
+ }
+ .project-tile h3{
+     background-color:darkslategray;
+     color:#fff;
+     text-align:center;
+     width:370px;
+     padding:10px 0;
+     margin-top:-5px;
+ }
+ #projects .project-tile img{
+     width:370px;
+     height:220px;
+ }
