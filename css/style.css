@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Luxurious+Roman&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  #welcome-section {
+    height: 100vh;
+    background-color: #c8a4c8;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: #31033b;
+    align-items: center;
+  }
+  .fa-laptop-code {
+    color: #fff;
+    font-size: 30px;
+    border: 5px solid #fff;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  #navbar ul li {
+    list-style-type: none;
+    float: left;
+  }
+  #navbar ul li a {
+    margin: 0 5px;
+    padding: 0 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 1s;
+    text-transform: uppercase;
+  }
+  #navbar ul li a:hover {
+    color: #a6a3a6;
+    transition: 1s;
+  }
+  #profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+  }
+  #profile-text {
+  }
+  #profile-text h1 {
+    font-size: 2rem;
+    color: #424142;
+    margin-bottom: 10px;
+    font-family: "Luxurious Roman", cursive;
+  }
+  #profile-text p {
+    width: 90%;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  #links {
+    margin-top: 20px;
+  }
+  #profile-text a {
+    margin: 0 10px 0px 0px;
+    background-color: #31033b;
+    padding: 10px;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+  }
+  #profile-text a:hover {
+    background-color: #3a243a;
+    transition: 1s;
+  }
+  #profile-img {
+    width: 350px;
+    height: 200px;
+  }
+  #profile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  #projects {
+    background: #5d2d5d;
+    height: 95vh;
+  }
+  #projects h2 {
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .project-tile {
+    width: 31%;
+    float: left;
+    margin: 15px;
+    background: #958e95;
+  }
+  .project-tile img {
+    width: 100%;
+    height: 220px;
+  }
+  .project-tile a {
+    text-decoration: none;
+  }
+  .project-tile h3 {
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+  }
+  #footer{
+    text-align:center;
+    font-size: 1.8rem;
+    color:#fff;
+    padding:15px 0;
+    background-color:#31033b;
+  }
